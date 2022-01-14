@@ -3,14 +3,14 @@
 /* common sections */
 
 body {
-  background-color: #f3f1ff;
+  background-color: white;
   font-family: "Poppins", sans-serif;
 }
 
 /* navigation bar styles */
 
 .container {
-  padding: 3rem 5rem;
+  padding: 2rem 5rem 1rem 5rem;
 }
 
 .header-side {
@@ -66,4 +66,18 @@ body {
 .camera-section {
   padding-left: 10rem;
   margin-top: 0px;
+}
+
+/* brand logos */
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+hr {
+  border: 1px solid #f3f1ff;
+  width: 1188px;
 }
