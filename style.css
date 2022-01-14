@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,300;1,100;1,500&family=Poppins:wght@200;300;400;500;600;800;900&display=swap");
+
+/* common sections */
+
+body {
+  background-color: #f3f1ff;
+  font-family: "Poppins", sans-serif;
+}
+
+/* navigation bar styles */
+
+.container {
+  padding: 3rem 5rem;
+}
+
+.header-side {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-side .brand-logo a {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.header-side a {
+  text-decoration: none;
+  color: black;
+  padding-right: 2rem;
+}
+
+/* top page styles  */
+
+.top-page {
+  display: flex;
+  height: 475px;
+}
+.half-width {
+  width: 50%;
+}
+
+.section-heading {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 52px;
+  width: 582px;
+  height: 133px;
+}
+.influencer a {
+  text-decoration: none;
+  color: white;
+  background-color: #e6425e;
+  padding: 10px 40px;
+  border-radius: 2rem;
+}
+
+.influencer p {
+  font-weight: 400;
+  font-size: 16px;
+  padding-bottom: 2.5rem;
+  color: #3a3a3a;
+}
+
+.camera-section {
+  padding-left: 10rem;
+  margin-top: 0px;
+}
