@@ -81,3 +81,61 @@ hr {
   border: 1px solid #f3f1ff;
   width: 1188px;
 }
+
+/* product items */
+
+.section-popular {
+  text-align: center;
+  font-weight: 600;
+  font-size: 28px;
+  color: black;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 3rem;
+  padding: 2rem;
+}
+
+.product {
+  background-color: #f4f3fa65;
+  width: 329px;
+  height: 476px;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  align-items: center;
+  border-radius: 0.8rem;
+  box-shadow: 0.1px 0.1px 5px #aaaaaa;
+}
+
+.product img {
+  border-radius: 0.8rem;
+}
+
+.product-title {
+  font-weight: 550;
+}
+.product-price {
+  font-weight: 500;
+}
+
+.product-review {
+  color: #fb8200;
+}
+.product-review span {
+  color: black;
+}
+.description {
+  font-weight: 200;
+}
+
+.see-more a {
+  text-decoration: none;
+  color: #e6425e;
+  float: right;
+  padding-right: 5rem;
+  font-size: 20px;
+}
