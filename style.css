@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,300;1,100;1,500&family=Poppins:wght@200;300;400;500;600;800;900&display=swap");
 
-/* common sections */
+/*------------------------------ common sections----------------------------------- */
 
 body {
   background-color: white;
@@ -9,7 +9,7 @@ body {
   padding: 0;
 }
 
-/* navigation bar styles */
+/* --------------------------------navigation bar styles--------------------------------- */
 
 .container {
   padding: 2rem 5rem 1rem 5rem;
@@ -32,10 +32,12 @@ body {
   padding-right: 2rem;
 }
 
-/* top page styles  */
+/* -----------------------------------------top page styles ---------------------------------------- */
 
 .top-page {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 475px;
 }
 .half-width {
@@ -47,8 +49,10 @@ body {
   font-style: normal;
   font-weight: 800;
   font-size: 52px;
-  width: 582px;
-  height: 133px;
+}
+.section-heading:hover {
+  transform: scale(0.7);
+  transition: 0.5s all ease;
 }
 .influencer a {
   text-decoration: none;
@@ -56,6 +60,10 @@ body {
   background-color: #e6425e;
   padding: 10px 40px;
   border-radius: 2rem;
+}
+.influencer a:hover {
+  background-color: #b9134f;
+  color: white;
 }
 
 .influencer p {
@@ -65,14 +73,13 @@ body {
   color: #3a3a3a;
 }
 
-.camera-section {
-  padding-left: 10rem;
-  margin-top: 0px;
+.camera-section img {
+  align-items: center;
 }
 
-/* brand logos */
+/* --------------------------------------------brand logos------------------------------ */
 
-.brand-logo {
+.brand-container .brand-logo {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -84,7 +91,7 @@ hr {
   width: 1188px;
 }
 
-/* product items */
+/* ----------------------------------product items------------------------------------- */
 
 .section-popular {
   text-align: center;
@@ -111,6 +118,10 @@ hr {
   align-items: center;
   border-radius: 0.8rem;
   box-shadow: 0.1px 0.1px 5px #aaaaaa;
+}
+.product:hover {
+  transform: scale(0.8);
+  transition: 0.5s all ease;
 }
 
 .product img {
@@ -141,8 +152,11 @@ hr {
   float: right;
   padding-right: 5rem;
 }
+.see-more a:hover {
+  color: #b9134f;
+}
 
-/* last pages css*/
+/*------------------------------------------- last pages css--------------------------------------*/
 
 .last-page {
   display: flex;
@@ -161,8 +175,12 @@ hr {
   padding: 10px 40px;
   border-radius: 2rem;
 }
+.last-page-column a:hover {
+  background-color: #b9134f;
+  color: white;
+}
 
-/* contact sections */
+/* ------------------------------------contact sections-------------------------------------- */
 
 .container-form {
   padding: 10px;
@@ -326,7 +344,7 @@ input {
   letter-spacing: 1.4px;
 }
 
-/* footers css */
+/* -----------------------------------footers css------------------------------------ */
 
 .footer-part {
   height: 240px;
@@ -343,4 +361,86 @@ input {
   color: white;
   padding-right: 1rem;
   align-items: center;
+}
+
+/* ---------------------responsive part css--------------------------- */
+
+@media only screen and (max-width: 688px) {
+  .header-side {
+    display: none;
+  }
+  .container {
+    width: 100%;
+    padding: 30px 0;
+  }
+  .top-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .camera-section img {
+    align-items: center;
+    padding-top: 2rem;
+    width: 70%;
+    height: 80%;
+  }
+  .brand-container .brand-logo {
+    display: none;
+  }
+  hr {
+    display: none;
+  }
+
+  .section-popular {
+    padding-top: 35rem;
+  }
+
+  .products-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .last-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+  .header-side {
+    display: none;
+  }
+  .container {
+    width: 100%;
+    padding: 30px 0;
+  }
+  .top-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  hr {
+    display: none;
+  }
+  .camera-section img {
+    align-items: center;
+    padding-top: 2rem;
+    width: 70%;
+    height: 80%;
+  }
+  .brand-container .brand-logo {
+    padding-top: 35rem;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .last-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
